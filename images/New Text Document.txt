@@ -1,0 +1,46 @@
+                                                       * {
+                                                           margin: 0;
+                                                           padding: 0;
+                                                           font-family: "Lato", sans-serif;
+                                                       }
+                                                       
+                                                       a.navbar-brand,
+                                                       .nav-link {
+                                                           font-size: 20px;
+                                                           text-transform: uppercase;
+                                                       }
+                                                       
+                                                       .carousel-item {
+                                                           height: 500px;
+                                                           background: no-repeat scroll center;
+                                                           background-size: cover;
+                                                       }
+                                                       
+                                                       .carousel-item::before {
+                                                           content: "";
+                                                           display: block;
+                                                           position: absolute;
+                                                           top: 0;
+                                                           left: 0;
+                                                           bottom: 0;
+                                                           right: 0;
+                                                           background: #0000;
+                                                           opacity: 0.7;
+                                                      }
+                                                       
+                                                       .item,
+                                                       img {
+                                                           position: absolute;
+                                                           object-fit: cover;
+                                                           height: 100% !important;
+                                                           width: 100% !important;
+                                                           /*min-height: 500px;*/
+                                                       }
+                                                       
+                                                       .carousel-control-prev {
+                                                           background-image: url("images/left.svg");
+                                                       }
+                                                       
+                                                       .carousel-control-next {
+                                                           background-image: url("images/right.svg");
+                                                       }
