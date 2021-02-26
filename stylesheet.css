@@ -4,17 +4,26 @@
     font-family: "Lato", sans-serif;
 }
 
-a.navbar-brand,
+
+/*Navbar Starts Here*/
+
+.navbar-brand,
 .nav-link {
     font-size: 20px;
     text-transform: uppercase;
 }
+
+
+/*Carousel*/
 
 .carousel-item {
     height: 500px;
     background: no-repeat scroll center;
     background-size: cover;
 }
+
+
+/*Services starts here*/
 
 .carousel-item:after {
     content: "";
@@ -28,9 +37,15 @@ a.navbar-brand,
 }
 
 .carousel-caption {
+    position: absolute;
+    top: 200px;
     bottom: 180px;
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.carousel-caption h5 {
+    font-size: 3rem;
 }
 
 .item,
@@ -55,4 +70,20 @@ img {
     background-size: 2em;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/*Services starts here*/
+
+
+/*Media query for phones*/
+
+@media screen and (max-width: 690px) {
+    /*query for carousel and carousel-caption responsivness*/
+    .carousel-caption {
+        padding: 10px!important;
+    }
+    .carousel-caption h5 {
+        font-size: 2rem!important;
+    }
 }
