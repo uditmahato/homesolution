@@ -2,6 +2,7 @@
         margin: 0;
         padding: 0;
         font-family: "Lato", sans-serif;
+        text-decoration: none;
     }
     
     li {
@@ -29,15 +30,24 @@
         padding: 10px 6px;
         outline: none;
     }
+    
+    .nav-item:Hover {
+        background-color: #1bbc9b;
+        color: #fff!important;
+    }
+    
+    .nav-item a:hover {
+        color: #fff!important;
+    }
     /*Carousel*/
     
-    .carousel-item {
+    .carousel-item-first {
         height: 500px;
         background: no-repeat scroll center;
         background-size: cover;
     }
     
-    .carousel-item:after {
+    .carousel-item-first:after {
         content: "";
         display: block;
         position: absolute;
@@ -49,7 +59,7 @@
         background: rgba(0, 0, 0, 0.7);
     }
     
-    .carousel-caption {
+    .carousel-caption-first {
         position: absolute;
         top: 200px;
         bottom: 180px;
@@ -61,8 +71,12 @@
         font-size: 3rem;
     }
     
-    .item,
-    img {
+    .carousel-caption-first p,
+    h5 {
+        text-transform: uppercase!important;
+    }
+    
+    .carousel-item-first img {
         position: absolute;
         object-fit: cover;
         height: 100%!important;
@@ -70,22 +84,182 @@
         /*min-height:500px;*/
     }
     
-    .carousel-control-prev {
+    .carousel-control-prev-first {
         background-image: url("images/left.svg");
         background-size: 2em;
         background-repeat: no-repeat;
         background-position: center;
     }
     
-    .carousel-control-next {
+    .carousel-control-next-second {
         background-image: url("images/right.svg");
         z-index: 800;
         background-size: 2em;
         background-repeat: no-repeat;
         background-position: center;
     }
-    /*owl carousel starts here*/
+    /*Services starts here*/
+    
+    .allservices {
+        height: 500px;
+        width: auto;
+    }
+    
+    .allservices p {
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        padding: 70px;
+        font-size: 3rem;
+        color: #1bbc9b;
+    }
+    /*Proces*/
+    
+    .process {
+        background-color: #1bbc9b;
+        padding-bottom: 5px;
+        color: #ffff;
+        padding: 10px;
+    }
+    
+    .message-to-hire {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .message-hire {
+        font-size: 1rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    .row-steps li {
+        list-style: upper-roman;
+        padding: 10px;
+    }
+    /*Reviews starts here*/
+    
+    *Reiview from our visitors starts*/ .visitors-reviews {
+        height: auto;
+        width: 100%;
+        padding: 10px 0px 30px 0px;
+    }
+    
+    .box {
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 2px;
+        transition: 0.3 ease;
+    }
+    
+    .box:hover {
+        background: #1bbc9b;
+    }
+    
+    .cyc-home-carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: -60px!important;
+    }
+    
+    .cyc-home-carousel-indicators li {
+        background-color: #1bbc9b !important;
+    }
+    
+    .cyc-home-carousel-indicators:hover li {
+        background-color: #1bbc9b !important;
+    }
+    
+    .carousel-control-next span,
+    .carousel-control-prev span {
+        color: #1bbc9b;
+        background-color: #1bbc9b;
+    }
+    
+    .box a {
+        position: relative;
+    }
+    
+    .box a img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-top: 2px;
+    }
+    
+    .box a::after {
+        content: '\201D';
+        font-family: FontAwesome;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(to right, #005a9c 0%, #005a9c 0%, #005a9c 100%);
+        color: white;
+        position: absolute;
+        top: 120%;
+        left: 70%;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box h1 {
+        font-size: 13px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    
+    .box:hover h1 {
+        color: #fff!important;
+    }
+    
+    .box h2 {
+        font-size: 13px;
+        font-weight: 400;
+        color: #0000;
+        margin-bottom: 20px;
+    }
+    
+    .box:hover h1,
+    h2 {
+        color: #ffff;
+    }
+    /*Reiview from our visitorsEnds*/
     /*Contact us starts here*/
+    
+    .form-group-box input:oncli {
+        border-color: #1bbc9b!important;
+    }
+    
+    .form-group-box input {
+        border-color: #1bbc9b!important;
+    }
+    
+    .form-group-box textarea {
+        border-color: #1bbc9b!important;
+    }
+    
+    .form-group-send input {
+        background-color: #1bbc9b!important;
+        border-color: #ffff!important;
+        color: #ffff;
+    }
+    
+    .form-group-send input:hover {
+        background-color: #ffff!important;
+        color: #1bbc9b;
+        border-color: #1bbc9b!important;
+    }
+    
+    .address iframe {
+        width: auto;
+        overflow-wrap: inherit;
+        margin: auto;
+        height: 200px;
+    }
     /*Media query for phones*/
     
     @media screen and (max-width: 690px) {
