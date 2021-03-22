@@ -139,6 +139,9 @@ h5 {
 }
 
 
+/***/
+
+
 /*Proces*/
 
 .process {
@@ -327,5 +330,11 @@ h2 {
         width: 100%;
         height: 250px;
         margin-bottom: -70px!important;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .item-show {
+        display: block!important;
     }
 }

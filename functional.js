@@ -13,3 +13,4 @@ $(document).ready(function() {
     });
 
 });
+//review section js code
