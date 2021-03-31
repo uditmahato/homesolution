@@ -1,5 +1,4 @@
 # Developed by Udit Kumar Mahato
-# Handed to Satyam Poudel
 
 # Fully responsive
 
