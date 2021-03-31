@@ -119,18 +119,25 @@
         /*Services starts here*/
         
         .allservices {
-            height: 500px;
-            width: auto;
+            height: auto;
+            width: 100%;
         }
         
-        .allservices p {
-            align-items: center;
-            width: 100%;
-            height: auto;
-            margin: auto;
-            padding: 70px;
-            font-size: 3rem;
-            color: #1bbc9b;
+        .service-container h1,
+        .service-container p {
+            text-align: center!important;
+        }
+        
+        .row-simage div {
+            align-items: center!important;
+            text-align: center;
+        }
+        
+        .row-simage div img {
+            color: #1bbc9b!important;
+            height: 70%;
+            width: 50%;
+            margin-bottom: 15px;
         }
         /***/
         /*Proces*/
@@ -335,6 +342,10 @@
             margin: auto;
             height: 200px;
         }
+        
+        .size-powered {
+            font-size: 10px;
+        }
         /*Media query for phones*/
         
         @media screen and (max-width: 690px) {
@@ -346,12 +357,23 @@
                 font-size: 2rem!important;
             }
         }
+        /*Media query to make the download secction responsive*/
         
         @media screen and (max-width:600px) {
             .image-of-mobile-app img {
                 width: 100%;
                 height: 400px;
                 margin-bottom: -70px!important;
+            }
+            .explanation h1 {
+                font-size: 23px;
+                text-transform: uppercase;
+            }
+            .explanation {
+                text-align: center!important;
+            }
+            .process div {
+                margin-top: 10px!important;
             }
         }
         
@@ -384,5 +406,20 @@
             .logo {
                 width: 150px;
                 height: 70px;
+            }
+        }
+        /*Media query to make the services responsive*/
+        
+        @media screen and (max-width:406px) {
+            .row-simage div img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+        
+        @media screen and (max-width: 767px) and (min-width: 407px) {
+            .row-simage div img {
+                height: 50%!important;
+                width: 50%!important;
             }
         }
